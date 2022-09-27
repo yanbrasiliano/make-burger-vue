@@ -1,0 +1,98 @@
+{
+  "ingredients": {
+    "breads": [
+      {
+        "id": 1,
+        "tipo": "White Italian"
+      },
+      {
+        "id": 2,
+        "tipo": "3 Cheeses"
+      },
+      {
+        "id": 3,
+        "tipo": "Parmesan"
+      },
+      {
+        "id": 4,
+        "tipo": "Light Bread"
+      }
+    ],
+    "meat": [
+      {
+        "id": 1,
+        "type": "Tenderloin"
+      },
+      {
+        "id": 2,
+        "type": "Rump"
+      },
+      {
+        "id": 3,
+        "type": "Rump Steak"
+      },
+      {
+        "id": 4,
+        "type": "Veggie burger"
+      }
+    ],
+    "optional": [
+      {
+        "id": 1,
+        "type": "Bacon"
+      },
+      {
+        "id": 2,
+        "type": "Cheddar"
+      },
+      {
+        "id": 3,
+        "type": "Lettuce"
+      },
+      {
+        "id": 4,
+        "type": "Tomatoe"
+      },
+      {
+        "id": 4,
+        "type": "Onion"
+      },
+      {
+        "id": 4,
+        "type": "Cucumber"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "type": "Requested"
+    },
+    {
+      "id": 2,
+      "type": "Production"
+    },
+    {
+      "id": 3,
+      "type": "Finalized"
+    }
+  ],
+  "burgers": [
+    {
+      "name": "Yan Penalva",
+      "meal": "Rump",
+      "bread": "White Italian",
+      "optional": ["Bacon", "Lettuce", "Onion"],
+      "status": "Finalized",
+      "id": 1
+    },
+    {
+      "name": "Tommy Wilson",
+      "meal": "Rump Steak",
+      "bread": "3 Cheeses",
+      "optional": ["Bacon", "Onion"],
+      "status": "Requested",
+      "id": 4
+    }
+  ]
+}
