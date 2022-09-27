@@ -1,4 +1,4 @@
-# Make Your Burguer 🍔
+# Make Your Burger 🍔
 Project in vue where the customer assembles his burger and has access to the order management tab.
 
 
