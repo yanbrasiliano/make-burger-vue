@@ -15,6 +15,6 @@ export default {
 <style scoped>
 #main-banner {
 	background-image: url('/public/img/burger.jpg');
-	background-position: right bottom -200px;
+	background-position: right bottom -290px;
 }
 </style>

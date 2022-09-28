@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="flex bg-slate-900 border-solid divide-orange-800 py-3.5 pl-14 justify-end items-center">
+		<div class="flex justify-end items-center bg-slate-900 border-solid divide-orange-800 py-3.5 pl-14  ">
 			<router-link class="ml-0 m-auto" id="logo-url" to="/">
 				<img class="w-10 h-10" id="logo" :src="logo" :alt="alt">
 			</router-link>

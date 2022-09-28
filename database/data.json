@@ -15,7 +15,7 @@
       },
       {
         "id": 4,
-        "type": "Light Bread"
+        "type": "Brown Bread"
       }
     ],
     "meat": [
@@ -79,20 +79,14 @@
   ],
   "burgers": [
     {
-      "name": "Yan Penalva",
-      "meat": "Rump",
+      "name": "Yan Brasiliano Silva Penalva",
+      "meat": "Tenderloin",
       "bread": "White Italian",
-      "optional": ["Bacon", "Lettuce", "Onion"],
-      "status": "Finalized",
-      "id": 1
-    },
-    {
-      "name": "Tommy Wilson",
-      "meat": "Rump Steak",
-      "bread": "3 Cheeses",
-      "optional": ["Bacon", "Onion"],
+      "additional": [
+        "Bacon"
+      ],
       "status": "Requested",
-      "id": 4
+      "id": 14
     }
   ]
 }

@@ -29,7 +29,6 @@ export default {
 
 <style>
 #main-container {
-
-	min-height: 250px;
+	min-height: 400px;
 }
 </style>
