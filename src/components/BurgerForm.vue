@@ -4,8 +4,7 @@
 		<form class="max-w-xl m-4 p-10 bg-white rounded shadow-xl">
 
 			<div class="">
-				<label class="text-lg block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-					for="name">Name</label>
+				<label class="text-lg block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400" for="name">Name</label>
 				<input
 					class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 					id="name" name="name" type="text" required="" placeholder="Your Name" aria-label="Name">
@@ -16,7 +15,8 @@
 			<select
 				class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 				name="bread" v-model="bread">
-				<option class="text-lg block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 mt-5">Select your bread</option>
+				<option class="text-lg block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 mt-5">Select your bread
+				</option>
 				<option v-for="bread in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option>
 			</select>
 
@@ -24,7 +24,8 @@
 			<select
 				class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 				name="meat" v-model="meat">
-				<option class="text-lg block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 mt-5">Select your meat</option>
+				<option class="text-lg block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 mt-5">Select your meat
+				</option>
 				<option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option>
 			</select>
 
