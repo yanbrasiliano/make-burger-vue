@@ -3,19 +3,19 @@
     "breads": [
       {
         "id": 1,
-        "tipo": "White Italian"
+        "type": "White Italian"
       },
       {
         "id": 2,
-        "tipo": "3 Cheeses"
+        "type": "3 Cheeses"
       },
       {
         "id": 3,
-        "tipo": "Parmesan"
+        "type": "Parmesan"
       },
       {
         "id": 4,
-        "tipo": "Light Bread"
+        "type": "Light Bread"
       }
     ],
     "meat": [
@@ -80,7 +80,7 @@
   "burgers": [
     {
       "name": "Yan Penalva",
-      "meal": "Rump",
+      "meat": "Rump",
       "bread": "White Italian",
       "optional": ["Bacon", "Lettuce", "Onion"],
       "status": "Finalized",
@@ -88,7 +88,7 @@
     },
     {
       "name": "Tommy Wilson",
-      "meal": "Rump Steak",
+      "meat": "Rump Steak",
       "bread": "3 Cheeses",
       "optional": ["Bacon", "Onion"],
       "status": "Requested",
