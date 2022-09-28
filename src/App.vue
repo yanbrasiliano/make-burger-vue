@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Navbar :logo="logo_src" :alt="app_name"/>
+		<Navbar :logo="logo_src" :alt="app_name" />
 		<router-view />
 		<Footer />
 
@@ -14,7 +14,7 @@ import Footer from "@/components/Footer.vue"
 
 export default {
 	name: "Home",
-	data(){
+	data() {
 		return {
 			logo_src: ("/img/logo.png"),
 			app_name: "Make Your Burguer"
@@ -26,3 +26,10 @@ export default {
 	}
 }
 </script>
+
+<style>
+#main-container {
+
+	min-height: 250px;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
-	<div id="main-banner" class="bg-no-repeat h-96 flex items-center justify-start pb-5 pl-10 text-gray-800 text-stone-300">
-		<h1 class="text-gray-900 text-center text-6xl">Make Your Burger</h1>
+	<div id="main-banner" class="bg-no-repeat h-96 flex items-center justify-start pb-5 pl-10">
+		<h1 class="text-slate-200 text-center text-6xl"></h1>
 	</div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
 #main-banner {
-	background-image: url('/public/img/burger1.jpg');
-	background-position: right top;
+	background-image: url('/public/img/burger.jpg');
+	background-position: right bottom -200px;
 }
 </style>
