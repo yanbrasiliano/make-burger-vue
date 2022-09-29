@@ -79,14 +79,14 @@
   ],
   "burgers": [
     {
-      "name": "Yan Brasiliano Silva Penalva",
-      "meat": "Tenderloin",
-      "bread": "White Italian",
+      "name": "Lucas",
+      "meat": "Veggie burger",
+      "bread": "Parmesan",
       "additional": [
-        "Bacon"
+        "Cucumber"
       ],
-      "status": "Requested",
-      "id": 14
+      "status": "Finalized",
+      "id": 16
     }
   ]
 }

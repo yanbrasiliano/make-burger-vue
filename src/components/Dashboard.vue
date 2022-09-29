@@ -2,7 +2,7 @@
 	<div id="burger-table" v-if="burgers">
 		<div>
 			<div id="burger-table-heading">
-				<div class="order-id">#:</div>
+				<div class="order-id">#</div>
 				<div>Client</div>
 				<div>Bread</div>
 				<div>Meat</div>
@@ -27,8 +27,8 @@
 							{{ s.type }}
 						</option>
 					</select>
-
-					<button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded" @click="deleteBurger(burger.id)">
+					<button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded"
+						@click="deleteBurger(burger.id)">
 						Cancel
 					</button>
 				</div>
@@ -39,47 +39,6 @@
 		<h2>No orders at the moment!</h2>
 	</div>
 </template>
-	<!-- <div class="" v-if="burgers">
-		<div>
-			<div class="font-bold p-3 border-solid divide-orange-800">
-				<div class="order-id">#:</div>
-				<div>Client</div>
-				<div>Bread</div>
-				<div>Meat</div>
-				<div>Additional</div>
-				<div>Actions</div>
-			</div>
-		</div>
-		<div id="burger-table-rows">
-			<div class="w-full p-3 border-solid divide-orange-800" v-for="burger in burgers" :key="burger.id">
-				<div class="order-number">{{ burger.id }}</div>
-				<div>{{ burger.name }}</div>
-				<div>{{ burger.bread }}</div>
-				<div>{{ burger.meat }}</div>
-				<div>
-					<ul v-for="(opcional, index) in burger.opcionais" :key="index">
-						<li>{{ opcional }}</li>
-					</ul>
-				</div>
-				<div>
-					<select class="mr-3 pb-3 pl-1.5" name="status" @change="updateBurger($event, burger.id)">
-						<option :value="s.type" v-for="s in status" :key="s.id" :selected="burger.status == s.type">
-							{{ s.type }}
-						</option>
-					</select>
-					<button
-						class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-red-500 rounded"
-						@click="deleteBurger(burger.id)" >
-						Cancel
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div v-else>
-		<h2>No orders at the moment!</h2>
-	</div> -->
-<!-- </template> -->
 
 <script>
 import api from '@/services/Base.js'
@@ -97,7 +56,6 @@ export default {
 	methods: {
 		getOrders() {
 			return api.get("burgers").then((response) => {
-				console.log(response.data)
 				this.burgers = response.data
 				this.getStatus()
 			});
@@ -114,6 +72,18 @@ export default {
 
 			return response
 		},
+
+		updateBurger(event, id) {
+			const option = event.target.value;
+			const dataJson = JSON.stringify({ status: option });
+			const req = fetch(`http://localhost:5001/burgers/${id}`, {
+				method: "PATCH",
+				headers: { "Content-Type": "application/json" },
+				body: dataJson
+			});
+			window.location.reload();
+			return req;
+		}
 	},
 	mounted() {
 		this.getOrders()
@@ -121,7 +91,6 @@ export default {
 }
 </script>
 <style scoped>
-
 #burger-table {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -155,5 +124,4 @@ export default {
 .burger-table-row .order-number {
 	width: 5%;
 }
-
 </style>
